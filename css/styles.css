@@ -850,6 +850,7 @@ section {
   gap: 16px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 72px;
 }
 .footer-socials-icons {
   width: 40px;
@@ -930,7 +931,8 @@ section {
   .footer-form {
     /* Tablet & Desktop*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: left;
     gap: 24px;
     height: 40px;
@@ -959,6 +961,12 @@ section {
   line-height: 2;
   letter-spacing: 0.04em;
   outline: transparent;
+}
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    /* Tablet */
+    width: 264px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .footer-form-input {
